@@ -1,0 +1,102 @@
+
+.ContactUs {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-color: #f4f4f4; 
+gap: 2rem;
+}
+
+.leads {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.leads img {
+width: 100%;
+max-width: 200px; /* Fixed maximum width for lead images */
+height: auto;
+border-radius: 8px; /* Rounded corners */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.econct {
+width: 100%;
+max-width: 800px;
+padding: 20px;
+background-color: #fff; /* White background for contrast */
+border: 1px solid #ddd; /* Border around the container */
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+text-align: center;
+}
+
+.socials {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.socials ul {
+list-style: none;
+display: flex;
+gap: 20px;
+padding: 0;
+margin: 0;
+}
+
+.socials li {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+background-color: #e0e0e0; /* Gray background for icons */
+border-radius: 50%; /* Circular shape */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.socials li:hover {
+background-color: #007bff; /* Blue on hover */
+transform: scale(1.1); /* Slight zoom effect */
+}
+
+.socials li svg {
+fill: #fff; /* White color for SVG icons */
+width: 24px;
+height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.leads {
+flex-direction: column; /* Stack images vertically */
+}
+
+.socials li {
+width: 40px;
+height: 40px; /* Smaller icons for smaller screens */
+}
+
+.socials li svg {
+width: 20px;
+height: 20px;
+}
+}
+
+@media (max-width: 480px) {
+.econct {
+padding: 10px; /* Reduced padding for mobile */
+}
+
+.socials ul {
+gap: 15px; /* Reduced spacing between icons */
+}
+}
