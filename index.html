@@ -5,131 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BDS</title>
      <link rel="stylesheet" href="Nav-Bar.css">
-     <style>
-        .HomePageContainer {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            height: 520px;
-            gap: 5rem;
-        }
-    
-        .picText img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: relative;
-            left: 7vb;
-            top: -1vh;
-        }
-    
-        .WelcomeTXT {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-            text-align: right;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            position: relative;
-            left: 50px;
-        }
-    
-        .WelHeader {
-            font-size: 3.5rem;
-            color: #333;
-            margin: 0;
-            position: relative;
-            right: 15vw;
-        }
-    
-        .joiner {
-            font-size: 1.5rem;
-            color: #555;
-            margin: 5px 0;
-            position: relative;
-            right: 10vw;
-        }
-    
-        .OrgName {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #007BFF;
-            margin: 10px 0;
-        }
-
-    
-        @media (max-width: 768px) {
-            .HomePageContainer {
-                flex-direction: column; 
-                align-items: center;
-                gap: 2rem;
-                height: auto; 
-            }
-    
-            .WelcomeTXT {
-                align-items: center; 
-                text-align: center;
-                left: 0; 
-            }
-    
-            .WelHeader {
-                font-size: 2.5rem;
-                right: 0; 
-            }
-    
-            .joiner {
-                font-size: 1.2rem;
-                right: 0; 
-            }
-    
-            .OrgName {
-                font-size: 2.5rem;
-            }
-    
-            .picText img {
-                max-width: 300px;
-                margin: 0 auto; 
-                left: 0;
-                top: 0; 
-            }
-        }
-    
-        @media (max-width: 480px) {
-            .HomePageContainer {
-                padding: 10px;
-                gap: 1rem;
-            }
-    
-            .WelcomeTXT {
-                padding: 10px;
-            }
-    
-            .WelHeader {
-                font-size: 2rem;
-            }
-    
-            .joiner {
-                font-size: 1rem;
-            }
-    
-            .OrgName {
-                font-size: 2rem;
-            }
-    
-            .picText img {
-                max-width: 200px;
-                margin: 0 auto;
-                left: 0; 
-                top: 0; 
-            }
-        }
-    </style>
-    
+     <link rel="stylesheet" href="Homepage.css"> 
+     <link rel="stylesheet" href="About.css">
     
 </head>
 <body>
@@ -140,6 +17,7 @@
             <li>Join Us</li>
         </ul>
     </nav>
+   <div class="container">
     <div class="HomePageContainer">
         <div class="picText">
             <img src="AboutUS-Debate-IMG2.jpg" alt="">
@@ -150,5 +28,23 @@
             <H1 class="OrgName">Badkulla Debate society </H1>
         </div>
     </div>
+    <div class="About">
+        <div class="FirstContainer">
+            <img src="debate-Design-IMG1-removebg-preview.png" alt="">
+            <div class="abouttxt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe expedita vel rerum animi ab impedit ut fuga, accusantium eum sed enim itaque molestiae perferendis voluptatibus labore doloremque vitae earum. Expedita, earum. Aliquid dolorem debitis doloremque! Assumenda ea dolorum, nemo voluptate nisi odio iure temporibus amet maxime libero! Earum, dolorem.
+            </div>
+        </div>
+    </div>
+    <div class="JoinUs">
+        <div class="SecondContainer">
+            <img src="joinUs1.png" alt="">
+            <div class="InnerContainer">
+                <p class="Txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur minima doloremque dolores culpa quam impedit ea debitis quaerat facere nobis.</p>
+                <button class="BTN">Join Us</button>
+            </div>
+        </div>
+    </div>
+   </div>
 </body>
 </html>
